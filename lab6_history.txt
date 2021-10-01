@@ -1,0 +1,19 @@
+ls -l /dev/sda{,[123]}
+lsblk --list
+cat /proc/diskstats
+cat /proc/devices
+sudo dd if=/dev/zero of=./fs.img bs=1M count=10
+sudo losetup --find --show ./fs.img
+sudo losetup --list
+sudo mkfs -t ext4 /dev/loop0
+sudo blkid /dev/loop0
+sudo mount /dev/loop0 /mnt
+sudo mount | grep /mnt
+sudo df -h /mnt
+sudo df -hi /mnt
+sudo umount /dev/loop0
+sudo tune2fs -l /dev/loop0
+sudo losetup --detach /dev/loop0
+sudo losetup --list
+history > lab6_history.txt
+
