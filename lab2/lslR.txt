@@ -1,0 +1,11 @@
+.:
+total 4
+drw-rwxr-x. 2 maxt86 maxt86 22 Oct 12 10:20 dir
+-rw-r-----. 1 root   maxt86  5 Oct 12 10:16 file
+-rw-------. 1 maxt86 maxt86  0 Oct 12 10:27 file1
+-rw-rw-rw-. 1 maxt86 maxt86  0 Oct 12 10:28 file2
+-rw-rw-rw-. 1 maxt86 maxt86  0 Oct 12 10:32 ls.txt
+
+./dir:
+total 0
+-????????? ? ? ? ?            ? new_file
